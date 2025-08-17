@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="Calculadora basica">
+  <meta name="author" content="Lissandro">
+  <meta name="keywords" content="Calcularora facil calcular suma resta
+  sumar productos">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Calculator app</title>
+
+</head>
+<body>
+  <main class="contenedor__general">
+    <div class="contenedor__header">
+      <h1>calc</h1>
+      <div class="toggle">Theme</div>
+    </div>
+    <div class="contenedor__display">
+      <p id="showResult">--</p>
+    </div>
+    <div class="bg-keypad">
+    <div class="contenedor__botones">
+      <button class="num">7</button>
+      <button class="num">8</button>
+      <button class="num">9</button>
+      <button class="operacion">DEL</button>
+      <button class="num">4</button>
+      <button class="num">5</button>
+      <button class="num">6</button>
+      <button class="operacion">+</button>
+      <button class="num">1</button>
+      <button class="num">2</button>
+      <button class="num">3</button>
+      <button class="operacion">-</button>
+      <button class="operacion">.</button>
+      <button class="num">0</button>
+      <button class="operacion">/</button>
+      <button class="operacion">X</button>
+    </div>
+         <div class="contenedor__botones--opciones">
+        <button id="reset">RESET</button>
+        <button id="equal" onclick="equal()">=</button>
+      </div>
+    </div>
+  </main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
