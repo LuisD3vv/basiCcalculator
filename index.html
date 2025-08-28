@@ -12,20 +12,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
 <!--  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">-->
-  
   <title>Calculator</title>
 </head>
 <body>
   <main class="contenedor__general">
     <div class="contenedor__header">
         <div class="header">
-            <h1>Calculadora Basica</h1>
+            <h1 id="title">Calculadora Basica</h1>
         </div>
       <div class="toggle">
           <details>
-              <summary>Theme</summary>
+              <summary>Themes</summary>
               <p class="tm bg-normal">Navy_850</p>
-              <p class="tm bg-white">Navy_850</p>
+              <p class="tm bg-white">Grey_main</p>
               <p class="tm bg-purple">Purple_950</p>
           </details>
       </div>
@@ -85,9 +84,22 @@
         <div class="campo-boton">
             <button class="num" onclick="numeros('*')">x</button>
         </div>
+        <div class="campo-boton">
+            <button id="reset" class="num del">RESET</button>
+        </div>
+        <div class="campo-boton">
+            <button id="leftbra" class="num" onclick="numeros('(')">(</button>
+        </div>
+        <div class="campo-boton">
+            <button id="rightbra" class="num" onclick="numeros(')')">)</button>
+        </div>
+        <div class="campo-boton">
+            <button id="sqrt" class="num" onclick="numeros('√')">√</button>
+        </div>
+
+
     </div>
          <div class="contenedor__botones--opciones">
-        <button id="reset" class="num del">RESET</button>
         <button id="equal" class="num">=</button>
       </div>
     </div>

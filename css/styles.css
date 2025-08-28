@@ -23,7 +23,7 @@
   /* ================== THEME 2 ================== */
 
   /* Backgrounds */
-  --Navy_850Navy_850Navy_850--main_background: hsl(0, 0%, 90%);
+  --Grey--main-background: hsl(0, 0%, 90%);
   --Gray_300--toggle_background-keypad_background: hsl(0, 5%, 81%);
   --Gray_100--screen_background: hsl(0, 0%, 93%);
 
@@ -91,10 +91,28 @@ body {
   display: flex;
   flex-direction: column;
   width: min(40rem,95%);
-  height: 55rem;
+  height: max-content;
   justify-content: space-between;
   margin: 4rem auto;
   gap: 1rem;
+}
+@media (max-width: 35rem) {
+    .contenedor__botones {
+        height: max-content;
+    }
+    #reset {
+        width: 100%;
+    }
+    #equal {
+        padding: 3rem !important;
+    }
+    .contenedor__header {
+        order: 2;
+    }
+
+    #title,.toggle {
+        display: none;
+    }
 }
 .contenedor__header {
     display: flex;
@@ -104,20 +122,47 @@ body {
     color: var(--White);
     font-family: var(--Fuente),sans-serif;
 }
-details {font-size: 1.7rem;
+details {
+    border-left:4px solid #222 ;
+    border-right:4px solid #222 ;
+    font-size: 1.5rem;
     background-color: rgba(34, 34, 34, 0.15);
     padding: 1rem;
-    border-radius: .5rem;
     text-align: center;
+    overflow: hidden;
+    border-radius: 3px 20px 3px 20px;
+    transition: all 0.5s ease-out;
 }
-details[open] > summary {
+details[open] {
+    background-color: rgba(34, 34, 34, 0.80);
+    transition: all 0.5s ease-in;
+    max-height: 80px;
+    overflow: auto;
     border-bottom: 1px solid grey;
-    padding-bottom: 1rem;
-
+    padding: 1rem;
+    font-size: 1.3rem;
 }
+/*Eliminar la barra de scroll, fuciona para safari, google y edge*/
+details[open]::-webkit-scrollbar {
+    display: none;
+}
+/*summary {*/
+/*    list-style: none;*/
+/*}*/
 summary::marker {
-    color: var(--Gray_200--key_background);
+    color: cornflowerblue;
+    cursor: pointer;
 }
+/*summary::before {*/
+/*    content: "📂";*/
+/*    display: inline-block;*/
+/*}*/
+/*details[open] summary::before {*/
+/*    content: "📖";*/
+
+/*    transform: rotate(90deg); !* gira la flecha *!*/
+
+/*}*/
 .header {
     flex:1 1 65%;
 }
@@ -161,15 +206,25 @@ p {cursor: pointer;}
     font-family: var(--Fuente),sans-serif;
     border-radius: .5rem;
 }
-#showResult {margin: -1.5rem 3px auto auto;}
+#del {
+    background-color: var(--Navy_800--key_shadow);
+    color: white;
+    box-shadow: 0 3px 1px 0 hsl(224, 28%, 55%);
+}
+#del:active {
+    box-shadow: unset;
+    margin-top: 3px;
+}
+#showResult {margin: -3px 3px auto auto;}
 #lastres {
     padding: 1rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     background-color: rgba(238, 238, 238, 0.08);
     text-align: right;
     margin-left: auto;
-    width: 10rem;
+    width: max-content;
     border-radius: 5px;
+    box-shadow: 0 0 2px 1px rgba(238, 238, 238, 0.40);
 }
 
 .bg-keypad {
@@ -182,16 +237,18 @@ p {cursor: pointer;}
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-  height: 25rem;
+  height: max-content;
   justify-items: center;
   width: min(50rem,95%);
   margin: auto;
 }
 .contenedor__botones--opciones {
   display: flex;
+    flex-direction: column;
   padding: 1rem;
   width: min(46rem,100%);
-  margin: auto;height: 8rem;
+  margin: auto;
+  height: 8rem;
   gap: 1rem;
 }
 .campo-boton {
@@ -200,19 +257,21 @@ p {cursor: pointer;}
 }
 button {
     width: min(10rem,95%);
-  font-family: var(--Fuente),sans-serif;
-  border-radius: 0.5rem;
-  border: none;
-  box-shadow: 0 2px 0 1px grey;
-  height: 100%;
-  max-height: 5rem;
-  font-size: 2rem;
-  cursor: pointer;
-  color: var(--Navy_750);
+    font-family: var(--Fuente),sans-serif;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 2px 0 1px grey;
+    height: 100%;
+    max-height: 5rem;
+    font-size: 2.3rem;
+    cursor: pointer;
+    color: var(--Navy_750);
 }
 button.num:active,#reset:active,#equal:active {
     box-shadow: unset;
-    margin-top:  3px;
+    margin-top: 5px;
+    border-radius: 3px;
+    transition: 0.1s ease;
 }
 .del{
   background-color: var(--Navy_700--key_background);
@@ -222,12 +281,13 @@ button.num:active,#reset:active,#equal:active {
 #reset {
   background-color: var(--Navy_700--key_background);
   color:var(--White);
-  flex: 1 1 50%;
-  box-shadow: 0 2px 0 1px hsl(225, 21%, 55%) ;
+width: 100%  ;box-shadow: 0 3px 0 1px hsl(225, 21%, 55%) ;
+    padding: 1rem 2rem;
 }
 #equal {
+    font-size: 3.5rem;
   background-color: rgba(207, 35, 35, 0.822);
-  box-shadow: 0 2px 0 1px  rgba(207, 35, 35);
-  flex: 1 1 50%;
+  box-shadow: 0 3px 0 1px  rgba(207, 35, 35);
   color: var(--White);
-}
+    width: 100%  ;
+    padding: 1rem 2rem}
