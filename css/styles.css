@@ -256,7 +256,7 @@ p {cursor: pointer;}
     height: 5rem;
 }
 button {
-    width: min(10rem,95%);
+    width: min(15rem,95%);
     font-family: var(--Fuente),sans-serif;
     border-radius: 0.5rem;
     border: none;
@@ -280,9 +280,8 @@ button.num:active,#reset:active,#equal:active {
 }
 #reset {
   background-color: var(--Navy_700--key_background);
-  color:var(--White);
-width: 100%  ;box-shadow: 0 3px 0 1px hsl(225, 21%, 55%) ;
-    padding: 1rem 2rem;
+  color:var(--White);box-shadow: 0 3px 0 1px hsl(225, 21%, 55%) ;
+    padding: 1rem;
 }
 #equal {
     font-size: 3.5rem;
