@@ -14,7 +14,7 @@
 <!--  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">-->
   <title>Calculator</title>
 </head>
-<body>
+<body class="tema-principal tema-blanco tema-purpura">
   <main class="contenedor__general">
     <div class="contenedor__header">
         <div class="header">
@@ -23,9 +23,9 @@
       <div class="toggle">
           <details>
               <summary>Themes</summary>
-              <p class="tm bg-normal">Navy_850</p>
-              <p class="tm bg-white">Grey_main</p>
-              <p class="tm bg-purple">Purple_950</p>
+              <p class="tm bg-normal" onclick="theme(1)">· Navy</p>
+              <p class="tm bg-white" onclick="theme(2)">· Grey</p>
+              <p class="tm bg-purple" onclick="theme(3)">· Purple</p>
           </details>
       </div>
     </div>
@@ -36,7 +36,8 @@
     <div class="bg-keypad">
     <div class="contenedor__botones">
         <div class="campo-boton">
-            <button id="siete" class="num" onclick="numeros(7)">7</button></div>
+            <button id="siete" class="num" onclick="numeros(7)">7</button>
+        </div>
         <div class="campo-boton">
             <button id="ocho" class="num" onclick="numeros(8)">8</button>
         </div>
@@ -84,23 +85,15 @@
         <div class="campo-boton">
             <button class="num" onclick="numeros('*')">x</button>
         </div>
-        <div class="campo-boton">
-            <button id="reset" class="num del">RESET</button>
-        </div>
-        <div class="campo-boton">
-            <button id="leftbra" class="num" onclick="numeros('(')">(</button>
-        </div>
-        <div class="campo-boton">
-            <button id="rightbra" class="num" onclick="numeros(')')">)</button>
-        </div>
-        <div class="campo-boton">
-            <button id="sqrt" class="num" onclick="numeros('√')">√</button>
-        </div>
+
+
 
 
     </div>
          <div class="contenedor__botones--opciones">
-        <button id="equal" class="num">=</button>
+
+             <button id="reset" class="num del">RESET</button>
+             <button id="equal" class="num">=</button>
       </div>
     </div>
   </main>

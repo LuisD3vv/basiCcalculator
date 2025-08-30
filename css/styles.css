@@ -1,122 +1,260 @@
 :root {
-  /* ================== THEME 1 ================== */
+    /* ================== THEME 1 ================== */
 
-  /* Backgrounds */
-  --Navy_850--main_background: hsl(222, 26%, 31%);
-  --Navy_900--toggle_background-keypad_background: hsl(223, 31%, 20%);
-  --Navy_950--screen_background: hsl(224, 36%, 15%);
+    /* Backgrounds */
+    --Navy_850--main_background: hsl(222, 26%, 31%);
+    --Navy_900--toggle_background-keypad_background: hsl(223, 31%, 20%);
+    --Navy_950--screen_background: hsl(224, 36%, 15%);
 
-  /* Keys */
-  --Navy_700--key_background: hsl(225, 21%, 49%);
-  --Navy_800--key_shadow: hsl(224, 28%, 35%);
+    /* Keys */
+    --Navy_700--key_background: hsl(225, 21%, 49%);
+    --Navy_800--key_shadow: hsl(224, 28%, 35%);
 
-  --Red_600--key_background_toggle: hsl(6, 63%, 50%);
-  --Red_800--key_shadow: hsl(6, 70%, 34%);
+    --Red_600--key_background_toggle: hsl(6, 63%, 50%);
+    --Red_800--key_shadow: hsl(6, 70%, 34%);
 
-  --Gray_200--key_background: hsl(0, 0%, 90%);
-  --Gray_orange_400--key_shadow: hsl(28, 16%, 65%);
+    --Gray_200--key_background: hsl(0, 0%, 90%);
+    --Gray_orange_400--key_shadow: hsl(28, 16%, 65%);
 
-  /* Text */
-  --Navy_750: hsl(221, 14%, 31%);
-  --White: hsl(0, 100%, 100%);
+    /* Text */
+    --Navy_750: hsl(221, 14%, 31%);
+    --White: hsl(0, 100%, 100%);
 
-  /* ================== THEME 2 ================== */
+    /* ================== THEME 2 ================== */
 
-  /* Backgrounds */
-  --Grey--main-background: hsl(0, 0%, 90%);
-  --Gray_300--toggle_background-keypad_background: hsl(0, 5%, 81%);
-  --Gray_100--screen_background: hsl(0, 0%, 93%);
+    /* Backgrounds */
+    --Grey--main-background: hsl(0, 0%, 90%);
+    --Gray_300--toggle_background-keypad_background: hsl(0, 5%, 81%);
+    --Gray_100--screen_background: hsl(0, 0%, 93%);
 
-  /* Keys */
-  --Blue_500--key_background: hsl(185, 42%, 37%);
-  --Blue_600--key_shadow: hsl(185, 58%, 25%);
+    /* Keys */
+    --Blue_500--key_background: hsl(185, 42%, 37%);
+    --Blue_600--key_shadow: hsl(185, 58%, 25%);
 
-  --Orange_700--key_background_toggle: hsl(25, 98%, 40%);
-  --Orange_800--key_shadow: hsl(25, 99%, 27%);
+    --Orange_700--key_background_toggle: hsl(25, 98%, 40%);
+    --Orange_800--key_shadow: hsl(25, 99%, 27%);
 
-  --Grey_200--key_background: hsl(0, 0%, 90%);
-  --Grey_orange_450--key_shadow: hsl(35, 11%, 61%);
+    --Grey_200--key_background: hsl(0, 0%, 90%);
+    --Grey_orange_450--key_shadow: hsl(35, 11%, 61%);
 
-  /* Text */
-  --Gray_900: hsl(60, 10%, 19%);
-  --White_text: hsl(0, 100%, 100%);
+    /* Text */
+    --Gray_900: hsl(60, 10%, 19%);
+    --White_text: hsl(0, 100%, 100%);
 
-  /* ================== THEME 3 ================== */
+    /* ================== THEME 3 ================== */
 
-  /* Backgrounds */
-  --Purple_950--main_background: hsl(268, 75%, 9%);
-  --Purple_900--toggle_background-keypad_background-screen_background: hsl(
-    268,
-    71%,
-    12%
-  );
+    /* Backgrounds */
+    --Purple_950--main_background: hsl(268, 75%, 9%);
+    --Purple_900--toggle_background-keypad_background-screen_background: hsl(
+            268,
+            71%,
+            12%
+    );
 
-  /* Keys */
-  --Purple_800--key_background: hsl(281, 89%, 26%);
-  --Purple_400--key_shadow: hsl(285, 91%, 52%);
+    /* Keys */
+    --Purple_800--key_background: hsl(281, 89%, 26%);
+    --Purple_400--key_shadow: hsl(285, 91%, 52%);
 
-  --Cyan_500--key_background_toggle: hsl(176, 100%, 44%);
-  --Cyan_400--key_shadow: hsl(177, 92%, 70%);
+    --Cyan_500--key_background_toggle: hsl(176, 100%, 44%);
+    --Cyan_400--key_shadow: hsl(177, 92%, 70%);
 
-  --Purple_850--key_background: hsl(268, 47%, 21%);
-  --Purple_750--key_shadow: hsl(290, 70%, 36%);
+    --Purple_850--key_background: hsl(268, 47%, 21%);
+    --Purple_750--key_shadow: hsl(290, 70%, 36%);
 
-  /* Text */
-  --Yellow_300: hsl(52, 100%, 62%);
-  --Blue_950: hsl(198, 20%, 13%);
-  --White_theme3: hsl(0, 100%, 100%);
+    /* Text */
+    --Yellow_300: hsl(52, 100%, 62%);
+    --Blue_950: hsl(198, 20%, 13%);
+    --White_theme3: hsl(0, 100%, 100%);
 
-  /* Fuente */
-  --Fuente: "League Spartan", sans-serif;
+    /* Fuente */
+    --Fuente: "League Spartan", sans-serif;
 }
+/*ESTILOS GLOBALES*/
 *,
 *::after,
 *::before {
-  box-sizing: inherit;
-}
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
-body {
-  background-color: var(--Navy_850--main_background);
+    box-sizing: inherit;
 }
 .no-margin {
-  margin: 0;
+    margin: 0;
 }
 .no-padding {
-  padding: 0;
+    padding: 0;
 }
-.contenedor__general {
-  display: flex;
-  flex-direction: column;
-  width: min(40rem,95%);
-  height: max-content;
-  justify-content: space-between;
-  margin: 4rem auto;
-  gap: 1rem;
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
 }
-@media (max-width: 40rem) {
-    .contenedor__botones {
-        padding: 1rem;
-        height: 35rem !important;
-    }
- #equal {
-     min-height: 6rem;
+body {
+    background-color: var(--Navy_850--main_background);
+}
+/*tema 1*/
+body.tema-principal {
+ background-color: var(--Navy_850--main_background);
+}
+body.tema-principal .bg-keypad{
+    background-color: var(--Navy_900--toggle_background-keypad_background);
+}
+body.tema-principal #equal{
+    background-color: var(--Red_600--key_background_toggle);
+    box-shadow: 0 3px 0 1px var(--Red_800--key_shadow);
+}
+body.tema-principal .num {
+    background-color: var(--Gray_200--key_background);
+    box-shadow: 0 3px 0 1px var(--Gray_orange_400--key_shadow);
+    color: var(--Navy_750);
+}
+body.tema-principal #reset {
+    background-color:  var(--Navy_700--key_background);
+}
+body.tema-principal details {
+    border-color: var(--Navy_700--key_background);
+}
+body.tema-principal #equal:active {
+        box-shadow: unset;
+        margin-top: 3px;
+
+}
+
+/*tema 2*/
+
+body.tema-blanco {
+    background-color: var(--Grey--main-background);
+}
+body.tema-blanco .bg-keypad{
+    background-color: var(--Gray_300--toggle_background-keypad_background);
+}
+body.tema-blanco .contenedor__display {
+    background-color: var(--Gray_100--screen_background);
+}
+body.tema-blanco #equal {
+    background-color: var(--Orange_700--key_background_toggle);
+    box-shadow: 0 3px 0 1px var(--Orange_800--key_shadow);
+}
+body.tema-blanco .num {
+    background-color: var(--Grey_200--key_background);
+    box-shadow: 0 3px 0 1px var(--Grey_orange_450--key_shadow);
+    color: var(--Gray_900);
+}
+body.tema-blanco #reset {
+    background-color:  var(--Blue_500--key_background);
+    box-shadow:  0 3px 0 1px var(--Blue_600--key_shadow);
+}
+body.tema-blanco #del {
+    background-color:  var(--Blue_500--key_background);
+    box-shadow:  0 3px 0 1px var(--Blue_600--key_shadow);
+}
+body.tema-blanco #lastres {
+    color: black
+}
+body.tema-blanco #showResult {
+    color: black
+}
+body.tema-blanco #title {
+    color: black;
+}
+body.tema-blanco details{
+    border-color: var(--Orange_700--key_background_toggle);)
+}
+body.tema-blanco details[open]{
+    border-color: var(--Orange_700--key_background_toggle);)
+}
+body.tema-blanco summary{
+    color:black;
+}
+body.tema-blanco summary[open]{
+    color:white;
+}
+body.tema-blanco #equal:active {
+    box-shadow: unset;
+    margin-top: 3px;
+}
+body.tema-blanco #reset:active {
+    box-shadow: unset;
+    margin-top: 3px;
+}
+body.tema-blanco #del:active {
+    box-shadow: unset;
+    margin-top: 3px;
+}
+body.tema-blanco summary::marker {
+    color: var(--Orange_700--key_background_toggle);
+    cursor: pointer;
+}
+/*TEMA 3*/
+body.tema-purpura {
+background-color: var(--Purple_950--main_background);
+}
+body.tema-purpura .bg-keypad{
+     background-color: var(--Purple_900--toggle_background-keypad_background-screen_background);
  }
-    .contenedor__header {
-        order: 2;
-    }
-    #title,.toggle {
-        display: none;
-    }
-    .num {
-        min-height: 4.5rem;
-    }
-    .contenedor__display {
-        padding-right: 2rem !important;
-    }
+body.tema-purpura .contenedor__display {
+    background-color: var(--Purple_900--toggle_background-keypad_background-screen_background);
 }
+body.tema-purpura #equal {
+    background-color: var(--Cyan_500--key_background_toggle);
+    box-shadow: 0 3px 0 1px var(--Cyan_400--key_shadow);
+    color: black;
+}
+body.tema-purpura .num {
+    background-color: var(--Purple_850--key_background);
+    box-shadow: 0 3px 0 1px var(--Purple_750--key_shadow);
+    color: var(--Yellow_300);
+}
+body.tema-purpura #reset {
+    background-color:  var(--Purple_750--key_shadow);
+    box-shadow:  0 3px 0 1px var(--Purple_400--key_shadow);
+}
+body.tema-purpura #del {
+    background-color:  var(--Purple_750--key_shadow);
+    box-shadow:  0 3px 0 1px var(--Purple_400--key_shadow);
+}
+body.tema-purpura #title {
+    color: var(--Yellow_300););
+}
+body.tema-purpura #lastres {
+    color: var(--Yellow_300);
+}
+body.tema-purpura #showResult {
+    color: var(--Yellow_300);
+}
+body.tema-purpura details{
+    border-color: var(--Yellow_300););
+}
+body.tema-purpura #equal:active {
+    box-shadow: unset;
+    margin-top: 3px;
+}
+body.tema-purpura #reset:active {
+    box-shadow: unset;
+    margin-top: 3px;
+}
+body.tema-purpura #del:active {
+    box-shadow: unset;
+    margin-top: 3px;
+}
+body.tema-purpura summary::marker {
+    color: var(--Yellow_300);
+    cursor: pointer;
+}
+/*CONTENEDOR GENERAL*/
+.contenedor__general {
+    display: flex;
+    flex-direction: column;
+    width: min(35rem,95%);
+    height: max-content;
+    justify-content: space-between;
+    margin: 4rem auto;
+    gap: 1rem;
+}
+.contenedor__display {
+    padding-right: 2rem !important;
+}
+.contenedor__botones--opciones {
+    margin-top: 1rem;
+}
+
 .contenedor__header {
     display: flex;
     justify-content: space-between;
@@ -137,13 +275,12 @@ details {
     transition: all 0.5s ease-out;
 }
 details[open] {
-    background-color: rgba(34, 34, 34, 0.80);
+    background-color: rgba(34, 34, 34, 0.30);
     transition: all 0.5s ease-in;
     max-height: 80px;
     overflow: auto;
     border-bottom: 1px solid grey;
     padding: 1rem;
-    font-size: 1.3rem;
 }
 /*Eliminar la barra de scroll, fuciona para safari, google y edge*/
 details[open]::-webkit-scrollbar {
@@ -153,7 +290,6 @@ details[open]::-webkit-scrollbar {
 /*    list-style: none;*/
 /*}*/
 summary::marker {
-    color: cornflowerblue;
     cursor: pointer;
 }
 /*summary::before {*/
@@ -229,43 +365,42 @@ p {cursor: pointer;}
     border-radius: 5px;
     box-shadow: 0 0 2px 1px rgba(238, 238, 238, 0.40);
 }
-
 .bg-keypad {
-  background-color: var(--Navy_900--toggle_background-keypad_background);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  font-family: var(--Fuente),sans-serif;;
+    background-color: var(--Navy_900--toggle_background-keypad_background);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-family: var(--Fuente),sans-serif;;
 }
 .contenedor__botones {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  height: max-content;
-  justify-items: center;
-  width: min(50rem,95%);
-  margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    height: max-content;
+    justify-items: center;
+    width: min(50rem,95%);
+    margin: auto;
 }
 .contenedor__botones--opciones {
-  display: flex;
-    flex-direction: column;
-  padding: 1rem;
-  width: min(46rem,100%);
-  margin: auto;
-  height: 8rem;
-  gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    width: min(46rem,100%);
+    margin: auto;
+    height: 8rem;
+    gap: 1rem;
 }
 .campo-boton {
     width: 100%;
     height: 5rem;
 }
 button {
-    width: min(10rem,100%);
+    width: min(11rem,95%);
     font-family: var(--Fuente),sans-serif;
     border-radius: 0.5rem;
     border: none;
     box-shadow: 0 2px 0 1px grey;
-    height: 100%;
-    max-height: 4rem;
+    height: 5rem;
+    max-height: 5.5rem;
     font-size: 2.3rem;
     cursor: pointer;
     color: var(--Navy_750);
@@ -276,20 +411,17 @@ button.num:active,#reset:active,#equal:active {
     border-radius: 3px;
     transition: 0.1s ease;
 }
-.del{
-  background-color: var(--Navy_700--key_background);
-  color: var(--White);
-  box-shadow: 0 2px 0 1px hsl(225, 21%, 55%) ;
-}
+
 #reset {
-  background-color: var(--Navy_700--key_background);
-  color:var(--White);box-shadow: 0 3px 0 1px hsl(225, 21%, 55%) ;
+    background-color: var(--Navy_700--key_background);
+    flex: 1 1 10px;
+    color:var(--White);box-shadow: 0 3px 0 1px hsl(225, 21%, 55%) ;
     padding: 1rem;
 }
 #equal {
+    flex: 1 1 200px;
     font-size: 3.5rem;
     background-color: rgba(207, 35, 35, 0.822);
     box-shadow: 0 3px 0 1px  rgba(207, 35, 35);
     color: var(--White);
-    width: 100%  ;
     padding: 1rem;}
