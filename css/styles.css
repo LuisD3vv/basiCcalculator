@@ -155,16 +155,7 @@ body.tema-blanco #title {
     color: black;
 }
 body.tema-blanco details{
-    border-color: var(--Orange_700--key_background_toggle);)
-}
-body.tema-blanco details[open]{
-    border-color: var(--Orange_700--key_background_toggle);)
-}
-body.tema-blanco summary{
-    color:black;
-}
-body.tema-blanco summary[open]{
-    color:white;
+    border-color: var(--Blue_500--key_background);)
 }
 body.tema-blanco #equal:active {
     box-shadow: unset;
@@ -179,8 +170,11 @@ body.tema-blanco #del:active {
     margin-top: 3px;
 }
 body.tema-blanco summary::marker {
-    color: var(--Orange_700--key_background_toggle);
+    color: var(--Blue_500--key_background);
     cursor: pointer;
+}
+body.tema-blanco summary {
+    color: var(--Blue_500--key_background);
 }
 /*TEMA 3*/
 body.tema-purpura {
@@ -237,6 +231,9 @@ body.tema-purpura #del:active {
 body.tema-purpura summary::marker {
     color: var(--Yellow_300);
     cursor: pointer;
+}
+body.tema-purpura summary {
+    color: var(--Yellow_300);
 }
 /*CONTENEDOR GENERAL*/
 .contenedor__general {
@@ -354,7 +351,8 @@ p {cursor: pointer;}
     box-shadow: unset;
     margin-top: 3px;
 }
-#showResult {margin: -3px 3px auto auto;}
+#showResult {margin: -3px 3px auto auto;
+width: max-content}
 #lastres {
     padding: 1rem;
     font-size: 2.5rem;
